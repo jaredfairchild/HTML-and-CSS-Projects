@@ -1,0 +1,14 @@
+table {
+	background-color: darkolivegreen;
+	color: chartreuse;
+	border-style: double;
+}
+
+td {
+	border-style: groove;
+}
+
+td:hover {
+	color: darkolivegreen;
+	background-color: chartreuse;
+}

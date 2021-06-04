@@ -1,0 +1,14 @@
+p {
+	color: darkgreen;
+	background-color: cyan;
+	font-size: large;
+	text-align: right;
+}
+
+/* The text-shadow property adds a shaddow effect to text */
+.shadow-text {
+	font-family: "Arial";
+	text-shadow: 5px 5px 8px rgb(170, 170, 52);
+	font-size: xx-large;
+	color: rgb(107, 214, 0);
+}
