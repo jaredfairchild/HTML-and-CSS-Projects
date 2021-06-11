@@ -3,13 +3,15 @@
 	<head>
 		<meta charset="UTF-8" />
 		<title>Atlantis</title>
+		<link rel="stylesheet" href="./css/shared.css" />
+		<link rel="stylesheet" href="./css/animations.css" />
 	</head>
 	<body>
 		<!-- NAV -->
-		<div>
-			<div>
-				<ul>
-					<a href="#home" id="link"><li>HOME</li></a>
+		<div class="wrap">
+			<div class="menu-container">
+				<ul class="menu">
+					<a href="#home"><li>HOME</li></a>
 					<a href="#gallery"><li>GALLERY</li></a>
 					<a href="#contact"><li>RESERVATIONS</li></a>
 				</ul>
@@ -19,29 +21,28 @@
 
 		<!-- HOME -->
 		<div id="home">
-			<div>
-				<div><span>Atlantis</span></div>
+			<div class="container">
+				<div class="text-center">
+					<span class="head-main">Atlantis</span>
+				</div>
 			</div>
 		</div>
 		<!-- END HOME -->
 
 		<!-- GALLERY -->
-		<section>
-			<div id="gallery">
+		<section id="gallery">
+			<div class="container">
 				<h1>Gallery</h1>
-				<div>
+				<div class="flex-container">
 					<!-- PHOTO-CONTAINER 1 -->
-					<div>
-						<div>
-							<img
-								src="./images/thumbs/thumbnail_1.png"
-								alt="Bubbles at the surface"
-							/>
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumbs/thumbnail_1.png" alt="Bubbles" />
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>
-									We have several submarine launches departing daily, book your
-									trip today!
+									We have several submarine departures daily, book your trip
+									today!
 								</p>
 							</div>
 						</div>
@@ -49,17 +50,14 @@
 					<!-- END PHOTO-CONTAINER 1 -->
 
 					<!-- PHOTO-CONTAINER 2 -->
-					<div>
-						<div>
-							<img
-								src="./images/thumbs/thumbnail_2.png"
-								alt="Sea floor between reefs"
-							/>
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumbs/thumbnail_2.png" alt="" />
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>
-									We have several submarine launches departing daily, book your
-									trip today!
+									We have several submarine departures daily, book your trip
+									today!
 								</p>
 							</div>
 						</div>
@@ -67,14 +65,14 @@
 					<!-- END PHOTO-CONTAINER 2 -->
 
 					<!-- PHOTO-CONTAINER 3 -->
-					<div>
-						<div>
-							<img src="./images/thumbs/thumbnail_3.png" alt="Atlantis" />
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumbs/thumbnail_3.png" alt="" />
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>
-									We have several submarine launches departing daily, book your
-									trip today!
+									We have several submarine departures daily, book your trip
+									today!
 								</p>
 							</div>
 						</div>
@@ -82,14 +80,14 @@
 					<!-- END PHOTO-CONTAINER 3 -->
 
 					<!-- PHOTO-CONTAINER 4 -->
-					<div>
-						<div>
-							<img src="./images/thumbs/thumbnail_4.png" alt="Coral reef" />
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumbs/thumbnail_4.png" alt="" />
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>
-									We have several submarine launches departing daily, book your
-									trip today!
+									We have several submarine departures daily, book your trip
+									today!
 								</p>
 							</div>
 						</div>
@@ -97,17 +95,14 @@
 					<!-- END PHOTO-CONTAINER 4 -->
 
 					<!-- PHOTO-CONTAINER 5 -->
-					<div>
-						<div>
-							<img
-								src="./images/thumbs/thumbnail_5.png"
-								alt="Manta ray swimming over anemones"
-							/>
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumbs/thumbnail_5.png" alt="" />
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>
-									We have several submarine launches departing daily, book your
-									trip today!
+									We have several submarine departures daily, book your trip
+									today!
 								</p>
 							</div>
 						</div>
@@ -115,14 +110,14 @@
 					<!-- END PHOTO-CONTAINER 5 -->
 
 					<!-- PHOTO-CONTAINER 6 -->
-					<div>
-						<div>
-							<img src="./images/thumbs/thumbnail_6.png" alt="A cuttlefish" />
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumbs/thumbnail_6.png" alt="" />
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>
-									We have several submarine launches departing daily, book your
-									trip today!
+									We have several submarine departures daily, book your trip
+									today!
 								</p>
 							</div>
 						</div>
@@ -130,17 +125,14 @@
 					<!-- END PHOTO-CONTAINER 6 -->
 
 					<!-- PHOTO-CONTAINER 7 -->
-					<div>
-						<div>
-							<img
-								src="./images/thumbs/thumbnail_7.png"
-								alt="Hammerhead shark"
-							/>
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumbs/thumbnail_7.png" alt="" />
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>
-									We have several submarine launches departing daily, book your
-									trip today!
+									We have several submarine departures daily, book your trip
+									today!
 								</p>
 							</div>
 						</div>
@@ -148,17 +140,14 @@
 					<!-- END PHOTO-CONTAINER 7 -->
 
 					<!-- PHOTO-CONTAINER 8 -->
-					<div>
-						<div>
-							<img
-								src="./images/thumbs/thumbnail_8.png"
-								alt="Deep sea angler fish"
-							/>
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumbs/thumbnail_8.png" alt="" />
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>
-									We have several submarine launches departing daily, book your
-									trip today!
+									We have several submarine departures daily, book your trip
+									today!
 								</p>
 							</div>
 						</div>
@@ -166,17 +155,14 @@
 					<!-- END PHOTO-CONTAINER 8 -->
 
 					<!-- PHOTO-CONTAINER 9 -->
-					<div>
-						<div>
-							<img
-								src="./images/thumbs/thumbnail_9.png"
-								alt="Light shining down through water"
-							/>
-							<div>
+					<div class="photo-container">
+						<div class="photo">
+							<img src="./images/thumbs/thumbnail_9.png" alt="" />
+							<div class="photo-overlay">
 								<h3>Click to Enlarge</h3>
 								<p>
-									We have several submarine launches departing daily, book your
-									trip today!
+									We have several submarine departures daily, book your trip
+									today!
 								</p>
 							</div>
 						</div>
@@ -188,30 +174,51 @@
 		<!-- END GALLERY -->
 
 		<!-- RSVP -->
-		<section>
-			<div id="contact">
-				<div>
-					<h1>Reservations</h1>
-					<div>
+		<section id="contact">
+			<div class="container">
+				<div class="heading-padding">
+					<h1 class="heading-padding">Reservations</h1>
+					<div class="reservation">
 						<h2>
-							<span>Your adventure is just around the river bend.</span>
+							<span>Your adventure is just over the horizon!</span>
 							<br />Reserve your trip today!
 						</h2>
-						<p>Please provide us with your basic contact information.</p>
-						<div>
-							<form action="" method="post">
-								<input type="text" value="First Name" class="rsvp" />
-								<input type="text" value="Last Name" class="rsvp" />
-								<input type="text" value="Email Address" class="rsvp" />
-								<input type="text" value="Phone Number" class="rsvp" />
-								<div class="form-spacer">
-									<label class="terms">Terms and Conditions</label>
-								</div>
-								<div>
-									<input type="submit" value="Submit" />
-								</div>
-							</form>
-						</div>
+						<p class="rsvp-text">
+							Please provide us with your basic contact information.
+						</p>
+						<form action="" method="post">
+							<input
+								type="text"
+								class="rsvp"
+								value=""
+								placeholder="First Name"
+							/>
+							<input
+								type="text"
+								class="rsvp"
+								value=""
+								placeholder="Last Name"
+							/>
+							<input
+								type="text"
+								class="rsvp"
+								value=""
+								placeholder="Email Address"
+							/>
+							<input
+								type="text"
+								class="rsvp"
+								value=""
+								placeholder="Phone Number"
+							/>
+							<div class="form-spacer">
+								<label class="terms">Terms and Conditions</label>
+							</div>
+
+							<div class="submit">
+								<input type="submit" value="Submit" />
+							</div>
+						</form>
 					</div>
 				</div>
 			</div>
@@ -219,7 +226,7 @@
 		<!-- END RSVP -->
 
 		<!-- FOOTER -->
-		<div>www.atlantis.swim &nbsp;|&nbsp &copy; 2021</div>
+		<div id="footer">www.atlantis.swim&nbsp;|&nbsp;&copy;2016</div>
 		<!-- END FOOTER -->
 	</body>
 </html>
