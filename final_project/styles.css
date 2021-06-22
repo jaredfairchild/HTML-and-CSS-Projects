@@ -115,6 +115,10 @@ li a:hover {
 	animation: dropin 7s;
 }
 
+#home p {
+	font-size: larger;
+}
+
 @keyframes dropin {
 	from {
 		top: -125vw;
@@ -137,6 +141,15 @@ video {
 p {
 	padding: 20px;
 	position: relative;
+}
+
+#quoted {
+	font-weight: bold;
+}
+
+#title {
+	font-style: italic;
+	font-size: initial;
 }
 
 /* =========================
