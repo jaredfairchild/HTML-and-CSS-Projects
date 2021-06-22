@@ -1,0 +1,241 @@
+/* =========================
+        UTILITY STYLES
+========================= */
+
+/* VARIABLES */
+:root {
+	--light: rgb(200, 200, 200);
+	--dark: rgb(50, 50, 50);
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+.centered-text {
+	text-align: center;
+}
+
+.dark {
+	background-color: var(--dark);
+}
+
+.light {
+	background-color: var(--light);
+}
+
+img {
+	border-radius: 5px;
+	filter: grayscale(75%);
+}
+
+/* =========================
+        NAV BAR STYLE
+========================= */
+
+#navbar {
+	z-index: 1;
+	overflow: hidden;
+	-webkit-animation: slide-in 5s;
+	animation: slide-in 5s;
+}
+
+@keyframes slide-in {
+	from {
+		left: -100vw;
+	}
+	to {
+		left: 0vw;
+	}
+}
+
+#navbar li {
+	-webkit-animation: fadein 10s;
+	animation: fadein 10s;
+}
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: var(--dark);
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+li {
+	float: left;
+	text-transform: uppercase;
+}
+
+li#name {
+	color: var(--light);
+	float: right;
+	font-weight: bold;
+	padding: 14px 16px;
+}
+
+li a {
+	display: block;
+	color: var(--light);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background-color: #111;
+}
+
+/* =========================
+    WELCOME MESSAGE STYLE
+========================= */
+
+#home {
+	width: 100%;
+	margin-top: 75px;
+	background: rgba(0, 0, 0, 0.5);
+	color: var(--light);
+	position: relative;
+	-webkit-animation: dropin 7s;
+	animation: dropin 7s;
+}
+
+@keyframes dropin {
+	from {
+		top: -125vw;
+	}
+	to {
+		top: 0vw;
+	}
+}
+
+video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	z-index: -1;
+	filter: grayscale();
+}
+
+#home h1,
+p {
+	padding: 20px;
+	position: relative;
+}
+
+/* =========================
+        CONTENT STYLE
+========================= */
+
+table {
+	width: 100%;
+	color: var(--dark);
+	border-collapse: collapse;
+}
+
+.content-row {
+	width: 100%;
+	left: 0;
+	align-content: center;
+}
+
+.content-row td {
+	margin: 5px;
+	padding: 5px;
+}
+
+.content-row img {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 50%;
+}
+
+#github-logo {
+	max-width: 400px; /* The GitHub logo doesn't look very good when it's too big */
+}
+
+/* =========================
+        FORM STYLE
+========================= */
+input[type="text"],
+input[type="email"] {
+	width: 100%;
+	padding: 10px;
+	border: 1px solid var(--light);
+	border-radius: 5px;
+	box-sizing: border-box;
+	margin-top: 5px;
+	margin-bottom: 15px;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover {
+	box-shadow: 0 0 10px var(--dark) inset;
+}
+
+input[type="submit"] {
+	background-color: var(--dark);
+	color: var(--light);
+	border: 1px solid var(--light);
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	padding: 10px 20px;
+	border-radius: 5px;
+}
+
+input[type="submit"]:hover {
+	border: 1px solid var(--dark);
+	background-color: var(--light);
+	color: var(--dark);
+}
+
+/* =========================
+        HOVER ZOOM STYLE
+========================= */
+
+h1.zoom-hover:hover,
+h2.zoom-hover:hover {
+	transform: scale(1.5);
+	transition: transform 1.5s;
+}
+
+.zoom-hover:hover {
+	transform: scale(1.1);
+	transition: transform 2s;
+}
+
+img:hover {
+	filter: grayscale(5%);
+}
+
+/* =========================
+        FOOTER STYLE
+========================= */
+
+footer {
+	padding-top: 0;
+	padding-bottom: 0;
+	background-color: var(--dark);
+	color: var(--light);
+}
