@@ -1,5 +1,5 @@
 # HTML-and-CSS-Projects
-This is a display of sample websites made using HTML and CSS
+These are sample websites made using HTML and CSS
 
 ## Projects
 * [Visit Atlantis](https://github.com/jaredfairchild/HTML-and-CSS-Projects/tree/main/Project)
