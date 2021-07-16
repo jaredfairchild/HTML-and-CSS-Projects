@@ -2,8 +2,10 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Hot Sauce</title>
 		<link rel="stylesheet" href="./CSS/one_page_website.css" />
+		<link rel="stylesheet" href="./CSS/modal.css" />
 	</head>
 	<body>
 		<!-- NAV -->
@@ -34,105 +36,120 @@
 		</div>
 		<!-- END HOME -->
 
-		<!-- PHOTOS -->
-		<div id="gallery">
-			<!-- PHOTO #1 -->
-			<div class="photo-container">
-				<div>
-					<img
-						src="./images/thumbs/thumbnail_1.png"
-						alt="A baby jalapen&#771;o"
-					/>
-				</div>
+		<!-- LightBox -->
+		<!-- Photos for modal/lightbox -->
+		<div class="row" id="gallery">
+			<div class="column">
+				<img
+					src="./images/thumbs/thumbnail_2.png"
+					alt="A baby jalapen&#771;o"
+					onclick="openModal();currentSlide(1)"
+					class="hover-shadow"
+				/>
 			</div>
-			<!-- END PHOTO #1 -->
-
-			<!-- PHOTO #2 -->
-			<div class="photo-container">
-				<div>
-					<img
-						src="./images/thumbs/thumbnail_2.png"
-						alt="Another baby jalapen&#771;o"
-					/>
-				</div>
+			<div class="column">
+				<img
+					src="./images/thumbs/thumbnail_5.png"
+					alt="Another baby jalapen&#771;o"
+					onclick="openModal();currentSlide(2)"
+					class="hover-shadow"
+				/>
 			</div>
-			<!-- END PHOTO #2 -->
-
-			<!-- PHOTO #3 -->
-			<div class="photo-container">
-				<div>
-					<img
-						src="./images/thumbs/thumbnail_3.png"
-						alt="Smoked pepper seeds"
-					/>
-				</div>
+			<div class="column">
+				<img
+					src="./images/thumbs/thumbnail_6.png"
+					alt="Smoked pepper seeds"
+					onclick="openModal();currentSlide(3)"
+					class="hover-shadow"
+				/>
 			</div>
-			<!-- END PHOTO #3 -->
-
-			<!-- PHOTO #4 -->
-			<div class="photo-container">
-				<div>
-					<img
-						src="./images/thumbs/thumbnail_4.png"
-						alt="Smoked pepper seeds"
-					/>
-				</div>
+			<div class="column">
+				<img
+					src="./images/thumbs/thumbnail_8.png"
+					alt="Smoked pepper seeds"
+					onclick="openModal();currentSlide(4)"
+					class="hover-shadow"
+				/>
 			</div>
-			<!-- END PHOTO #4 -->
-
-			<!-- PHOTO #5 -->
-			<div class="photo-container">
-				<div>
-					<img src="./images/thumbs/thumbnail_5.png" alt="Ingredients" />
-				</div>
-			</div>
-			<!-- END PHOTO #5 -->
-
-			<!-- PHOTO #6 -->
-			<div class="photo-container">
-				<div>
-					<img
-						src="./images/thumbs/thumbnail_6.png"
-						alt="Hot sauce in the blender"
-					/>
-				</div>
-			</div>
-			<!-- END PHOTO #6 -->
-
-			<!-- PHOTO #7 -->
-			<div class="photo-container">
-				<div>
-					<img
-						src="./images/thumbs/thumbnail_7.png"
-						alt="A pack of purple peppers (not pickled)"
-					/>
-				</div>
-			</div>
-			<!-- END PHOTO #7 -->
-
-			<!-- PHOTO #8 -->
-			<div class="photo-container">
-				<div>
-					<img
-						src="./images/thumbs/thumbnail_8.png"
-						alt="Bottled red hot sauce"
-					/>
-				</div>
-			</div>
-			<!-- END PHOTO #8 -->
-
-			<!-- PHOTO #9 -->
-			<div class="photo-container">
-				<div>
-					<img
-						src="./images/thumbs/thumbnail_9.png"
-						alt="Bottled green hot sauce"
-					/>
-				</div>
-			</div>
-			<!-- END PHOTO #9 -->
 		</div>
-		<!-- END PHOTOS -->
+		<!-- END photos for lightbox/modal -->
+
+		<!-- Modal -->
+		<div id="myModal" class="modal">
+			<!-- "Close" button -->
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+				<div class="mySlides">
+					<div class="numbertext">1 / 4</div>
+					<img src="./images/thumbs/thumbnail_2.png" />
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">2 / 4</div>
+					<img src="./images/thumbs/thumbnail_5.png" />
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">3 / 4</div>
+					<img src="./images/thumbs/thumbnail_6.png" />
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">4 / 4</div>
+					<img src="./images/thumbs/thumbnail_8.png" />
+				</div>
+
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+
+				<!-- Thumbnail images -->
+				<div class="thumb-image-container">
+					<div class="column">
+						<img
+							class="demo"
+							src="./images/thumbs/thumbnail_2.png"
+							onclick="currentSlide(1)"
+							alt="Baby Pepper"
+						/>
+					</div>
+
+					<div class="column">
+						<img
+							class="demo"
+							src="./images/thumbs/thumbnail_5.png"
+							onclick="currentSlide(2)"
+							alt="Ingredients"
+						/>
+					</div>
+
+					<div class="column">
+						<img
+							class="demo"
+							src="./images/thumbs/thumbnail_6.png"
+							onclick="currentSlide(3)"
+							alt="All blended up"
+						/>
+					</div>
+
+					<div class="column">
+						<img
+							class="demo"
+							src="./images/thumbs/thumbnail_8.png"
+							onclick="currentSlide(4)"
+							alt="Bottled and ready"
+						/>
+					</div>
+				</div>
+				<!-- END thubnail images -->
+			</div>
+		</div>
+		<!-- END Modal -->
+		<!-- END LightBox -->
 
 		<!-- FORM -->
 		<div id="form">
@@ -174,5 +191,6 @@
 		<!-- FOOTER -->
 		<div class="footer">www.spicy.sauce&nbsp;|&nbsp;&copy; 2021</div>
 		<!-- END FOOTER -->
+		<script src="./JS/script.js"></script>
 	</body>
 </html>
