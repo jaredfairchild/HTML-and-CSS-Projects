@@ -192,6 +192,35 @@
 			</div>
 			<!-- End Showtimes -->
 
+			<!-- Jumbotron heading -->
+			<div class="jumbotron jumbotron-fluid bg-info mt-5 text-center">
+				<div class="container">
+					<h1
+						class="display-4 hidden-sm-down"
+						style="
+							color: #fff;
+							font-family: roboto;
+							font-weight: 900;
+							text-transform: uppercase;
+						"
+					>
+						Movie Deals
+					</h1>
+					<p class="lead">Check out our monthly deals...</p>
+					<!-- This button triggers the modal -->
+					<button
+						type="button"
+						data-toggle="modal"
+						data-target="#register"
+						class="btn btn-success btn-lg"
+					>
+						See our monthly movie deals
+					</button>
+					<!-- end modal button -->
+				</div>
+			</div>
+			<!-- END jumbotron heading -->
+
 			<!-- DEALS -->
 			<div class="container text-center" id="deals">
 				<h1 class="text-primary my-5">Sign up for our Movie Club Rewards!</h1>
@@ -205,10 +234,98 @@
 							placeholder="Email Address"
 						/>
 					</div>
-					<button type="submit" class="btn btn-primary">Submit</button>
+					<!-- button with popover effect -->
+					<button
+						type="button"
+						class="btn btn-secondary btn-info popover-dismiss"
+						data-container="body"
+						data-toggle="popover"
+						data-placement="top"
+						data-content="Thank you for signing up!"
+					>
+						Submit
+					</button>
 				</form>
 			</div>
 			<!-- END DEALS -->
+
+			<!-- Modal -->
+			<div class="modal" tabindex="-1" id="register">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title">Register for Movie Deals</h5>
+							<button
+								type="button"
+								class="close"
+								data-dismiss="modal"
+								aria-label="Close"
+							>
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<!-- Form of the modal popup -->
+						<div class="modal-body">
+							<form action="">
+								<fieldset class="form-group">
+									<label for="firstname">First Name:</label>
+									<input
+										type="text"
+										id="firstname"
+										class="form-control"
+										placeholder="First Name..."
+									/>
+								</fieldset>
+								<fieldset class="form-group">
+									<label for="lastname">Last Name:</label>
+									<input
+										type="text"
+										id="lastname"
+										class="form-control"
+										placeholder="Last Name..."
+									/>
+								</fieldset>
+								<fieldset class="form-group">
+									<label for="email">Email:</label>
+									<input
+										type="text"
+										id="email"
+										class="form-control"
+										placeholder="Email..."
+									/>
+								</fieldset>
+								<fieldset class="form-group">
+									<label for="password">Password:</label>
+									<input
+										type="password"
+										id="password"
+										class="form-control"
+										placeholder="Password..."
+									/>
+								</fieldset>
+							</form>
+						</div>
+						<div class="modal-footer">
+							<button
+								type="button"
+								class="btn btn-secondary"
+								data-dismiss="modal"
+							>
+								Close
+							</button>
+							<button
+								type="button"
+								class="btn btn-primary"
+								data-dismiss="modal"
+								id="liveToastBtn"
+							>
+								Save changes
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- end modal form -->
 
 			<!-- FOOTER -->
 			<div class="container my-5">
@@ -236,7 +353,6 @@
 			<!-- END FOOTER -->
 		</div>
 
-		<!-- Optional JavaScript -->
 		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -253,5 +369,11 @@
 			integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
 			crossorigin="anonymous"
 		></script>
+
+		<script>
+			$(".popover-dismiss").popover({
+				trigger: "focus",
+			});
+		</script>
 	</body>
 </html>
